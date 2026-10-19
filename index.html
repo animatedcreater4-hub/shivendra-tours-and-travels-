@@ -2,32 +2,31 @@
 <html lang="hi">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Shivendra Tours and Travels</title>
 <style>
 *{box-sizing:border-box}
 body{margin:0;font-family:Arial,sans-serif;background:#f7f4ed;color:#17213b}
-header{background:#101d3a;color:white;text-align:center;padding:28px 15px}
-header h1{color:#e8c66a;margin:0 0 10px;font-size:27px}
-header p{margin:5px}
-nav{background:#d8b45a;padding:12px;text-align:center}
-nav a{color:#101d3a;text-decoration:none;font-weight:bold;margin:0 9px}
-.hero{padding:45px 20px;text-align:center;background:linear-gradient(135deg,#14264b,#263f70);color:white}
-.hero h2{font-size:30px;color:#f4d57e}
-.btn{display:inline-block;background:#e5bf59;color:#101d3a;padding:13px 20px;border-radius:8px;text-decoration:none;font-weight:bold;margin:8px}
-section{padding:28px 16px;max-width:900px;margin:auto}
-h2{color:#172d56;text-align:center}
+header,footer{background:#101d3a;color:white;text-align:center;padding:25px 15px}
+header h1{color:#e8c66a}
+nav{background:#d8b45a;padding:13px;text-align:center}
+nav a{color:#101d3a;text-decoration:none;font-weight:bold;margin:0 10px}
+.hero{padding:40px 18px;text-align:center;background:linear-gradient(135deg,#14264b,#263f70);color:white}
+.hero h2{color:#f4d57e;font-size:28px}
+.btn{display:inline-block;background:#e5bf59;color:#101d3a;padding:13px 20px;border-radius:8px;text-decoration:none;font-weight:bold;margin:8px;border:0;cursor:pointer}
+section{padding:25px 16px;max-width:900px;margin:auto}
+h2{text-align:center;color:#172d56}
 .card{background:white;padding:20px;margin:15px 0;border-radius:12px;box-shadow:0 3px 12px #0001}
 .card h3{color:#9a741b}
 input,select,textarea{width:100%;padding:13px;margin:8px 0;border:1px solid #bbb;border-radius:7px;font-size:16px}
-button{background:#172d56;color:white;padding:14px;border:0;border-radius:8px;width:100%;font-size:17px}
-footer{background:#101d3a;color:white;text-align:center;padding:22px}
+button{background:#172d56;color:white;padding:14px;border:0;border-radius:8px;width:100%;font-size:17px;cursor:pointer}
 .small{font-size:14px;line-height:1.6}
 </style>
 </head>
 <body>
+
 <header>
-<h1>✈ Shivendra Tours and Travels</h1>
+<h1>✈️ Shivendra Tours and Travels</h1>
 <p>आपकी यात्रा, हमारी जिम्मेदारी</p>
 <p>🚌 आरामदायक यात्रा • 🙏 यादगार अनुभव</p>
 </header>
@@ -41,29 +40,25 @@ footer{background:#101d3a;color:white;text-align:center;padding:22px}
 <div class="hero" id="home">
 <h2>चलिए, नई यात्रा पर! 🙏</h2>
 <p>परिवार और दोस्तों के साथ यादगार सफर की शुरुआत करें।</p>
-<p><b>आगामी यात्रा: 6 मार्च 2027</b></p>
+<p><b>प्रस्तावित यात्रा: 6 मार्च 2027</b></p>
 <p>अवधि: 7 दिन / 6 रात</p>
 <a class="btn" href="#booking">अभी पूछताछ करें</a>
 </div>
 
 <section id="packages">
-<h2>हमारी यात्रा सेवाएँ</h2>
-<div class="card" id="databasePackages">
-<h3>🚌 उपलब्ध टूर पैकेज</h3>
-<p id="packageStatus">टूर पैकेज लोड हो रहे हैं...</p>
+<h2>हमारे टूर पैकेज</h2>
+<div class="card">
+<h3>🚌 उपलब्ध यात्रा पैकेज</h3>
+<p id="packageStatus">पैकेज लोड हो रहे हैं...</p>
 <div id="packageList"></div>
 </div>
 <div class="card">
 <h3>🙏 धार्मिक यात्रा</h3>
-<p>प्रमुख तीर्थस्थलों की यात्रा की जानकारी और बुकिंग सहायता।</p>
+<p>धार्मिक यात्राओं की जानकारी के लिए हमसे संपर्क करें।</p>
 </div>
 <div class="card">
-<h3>🚌 भारत भ्रमण</h3>
-<p>परिवार, मित्रों और समूहों के लिए यात्रा की योजना बनाएँ।</p>
-</div>
-<div class="card">
-<h3>🏨 यात्रा सहायता</h3>
-<p>उपलब्धता के अनुसार बस, होटल और भोजन संबंधी जानकारी के लिए संपर्क करें।</p>
+<h3>🌏 भारत भ्रमण</h3>
+<p>परिवार और दोस्तों के साथ यादगार यात्रा की योजना बनाएँ।</p>
 </div>
 </section>
 
@@ -71,11 +66,13 @@ footer{background:#101d3a;color:white;text-align:center;padding:22px}
 <h2>बुकिंग / पूछताछ फॉर्म</h2>
 <div class="card">
 <form id="bookingForm">
-<label>आपका नाम</label>
+<label for="name">आपका नाम</label>
 <input id="name" required placeholder="अपना नाम लिखें">
-<label>मोबाइल नंबर</label>
+
+<label for="phone">मोबाइल नंबर</label>
 <input id="phone" type="tel" required placeholder="अपना मोबाइल नंबर">
-<label>यात्रियों की संख्या</label>
+
+<label for="people">यात्रियों की संख्या</label>
 <select id="people">
 <option>1 व्यक्ति</option>
 <option>2 व्यक्ति</option>
@@ -83,43 +80,107 @@ footer{background:#101d3a;color:white;text-align:center;padding:22px}
 <option>4 व्यक्ति</option>
 <option>5 या अधिक व्यक्ति</option>
 </select>
-<label>यात्रा का प्रकार</label>
+
+<label for="tour">यात्रा का प्रकार</label>
 <select id="tour">
 <option>धार्मिक यात्रा</option>
 <option>भारत भ्रमण</option>
 <option>अन्य यात्रा</option>
 </select>
-<label>संदेश</label>
-<textarea id="message" placeholder="अपना सवाल या यात्रा की जगह लिखें"></textarea>
+
+<label for="message">संदेश</label>
+<textarea id="message" placeholder="यात्रा की जगह या अपना सवाल लिखें"></textarea>
+
 <button type="submit">WhatsApp पर पूछताछ भेजें</button>
 </form>
-<p class="small">फॉर्म भेजने पर WhatsApp खुलेगा। संदेश जाँचकर खुद भेजें। यह ऑनलाइन भुगतान या पक्की बुकिंग नहीं है।</p>
+<p class="small">फॉर्म जमा करने पर WhatsApp खुलेगा। संदेश जाँचकर खुद भेजें। यह पक्की बुकिंग या ऑनलाइन भुगतान नहीं है।</p>
 </div>
 </section>
 
 <footer>
 <h3>Shivendra Tours and Travels</h3>
-<p>📅 अगली प्रस्तावित यात्रा: 6 मार्च 2027</p>
+<p>📅 प्रस्तावित यात्रा: 6 मार्च 2027</p>
 <p>📲 संपर्क: 93348 89540</p>
 <p class="small">यात्रा की जगह, किराया और उपलब्धता की पुष्टि संपर्क करके करें।</p>
 </footer>
 
 <script>
+const SUPABASE_URL = "https://uiavozfaivkulxceziuz.supabase.co";
+const SUPABASE_KEY = "YAHAN_APNI_PUBLISHABLE_KEY_DALO";
+
+async function loadPackages(){
+  const status = document.getElementById("packageStatus");
+  const list = document.getElementById("packageList");
+
+  try {
+    const response = await fetch(
+      SUPABASE_URL + "/rest/v1/tour_packages?select=title,destination,start_date,duration,price,description",
+      {headers:{"apikey":SUPABASE_KEY}}
+    );
+
+    if(!response.ok) throw new Error("HTTP " + response.status);
+
+    const packages = await response.json();
+    list.replaceChildren();
+
+    if(packages.length === 0){
+      status.textContent = "अभी डेटाबेस में कोई टूर पैकेज नहीं है।";
+      return;
+    }
+
+    status.textContent = "उपलब्ध पैकेज:";
+    packages.forEach(pkg => {
+      const card = document.createElement("div");
+      card.className = "card";
+
+      const title = document.createElement("h3");
+      title.textContent = pkg.title || "टूर पैकेज";
+      card.appendChild(title);
+
+      [
+        pkg.destination && "स्थान: " + pkg.destination,
+        pkg.start_date && "शुरुआत: " + pkg.start_date,
+        pkg.duration && "अवधि: " + pkg.duration,
+        pkg.price != null && "किराया: ₹" + pkg.price,
+        pkg.description
+      ].filter(Boolean).forEach(value => {
+        const p = document.createElement("p");
+        p.textContent = value;
+        card.appendChild(p);
+      });
+
+      list.appendChild(card);
+    });
+  } catch(error) {
+    status.textContent = "पैकेज लोड नहीं हुए। Supabase की API और permissions जाँचें।";
+    console.error(error);
+  }
+}
+
 document.getElementById("bookingForm").addEventListener("submit",function(e){
-e.preventDefault();
-const name=document.getElementById("name").value;
-const phone=document.getElementById("phone").value;
-const people=document.getElementById("people").value;
-const tour=document.getElementById("tour").value;
-const message=document.getElementById("message").value;
-const text="Namaste Shivendra Tours and Travels!%0A"+
-"Naam: "+encodeURIComponent(name)+"%0A"+
-"Mobile: "+encodeURIComponent(phone)+"%0A"+
-"Yatri: "+encodeURIComponent(people)+"%0A"+
-"Yatra: "+encodeURIComponent(tour)+"%0A"+
-"Sandesh: "+encodeURIComponent(message);
-window.open("https://wa.me/919334889540?text="+text,"_blank");
+  e.preventDefault();
+
+  const name = document.getElementById("name").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const people = document.getElementById("people").value;
+  const tour = document.getElementById("tour").value;
+  const message = document.getElementById("message").value.trim();
+
+  const text =
+    "Namaste Shivendra Tours and Travels!\n" +
+    "Naam: " + name + "\n" +
+    "Mobile: " + phone + "\n" +
+    "Yatri: " + people + "\n" +
+    "Yatra: " + tour + "\n" +
+    "Sandesh: " + message;
+
+  window.open(
+    "https://wa.me/919334889540?text=" + encodeURIComponent(text),
+    "_blank"
+  );
 });
+
+loadPackages();
 </script>
 </body>
 </html>
