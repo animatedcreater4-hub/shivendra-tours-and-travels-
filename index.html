@@ -1,291 +1,120 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="hi">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Shivendra Tours and Travels | भारत यात्रा</title>
-
-<meta name="description" content="Shivendra Tours and Travels के साथ भारत की धार्मिक और पर्यटन यात्राओं की जानकारी प्राप्त करें।">
-
+<title>Shivendra Tours and Travels</title>
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f7f4ed;color:#17213b}
+header{background:#101d3a;color:white;text-align:center;padding:28px 15px}
+header h1{color:#e8c66a;margin:0 0 10px;font-size:27px}
+header p{margin:5px}
+nav{background:#d8b45a;padding:12px;text-align:center}
+nav a{color:#101d3a;text-decoration:none;font-weight:bold;margin:0 9px}
+.hero{padding:45px 20px;text-align:center;background:linear-gradient(135deg,#14264b,#263f70);color:white}
+.hero h2{font-size:30px;color:#f4d57e}
+.btn{display:inline-block;background:#e5bf59;color:#101d3a;padding:13px 20px;border-radius:8px;text-decoration:none;font-weight:bold;margin:8px}
+section{padding:28px 16px;max-width:900px;margin:auto}
+h2{color:#172d56;text-align:center}
+.card{background:white;padding:20px;margin:15px 0;border-radius:12px;box-shadow:0 3px 12px #0001}
+.card h3{color:#9a741b}
+input,select,textarea{width:100%;padding:13px;margin:8px 0;border:1px solid #bbb;border-radius:7px;font-size:16px}
+button{background:#172d56;color:white;padding:14px;border:0;border-radius:8px;width:100%;font-size:17px}
+footer{background:#101d3a;color:white;text-align:center;padding:22px}
+.small{font-size:14px;line-height:1.6}
+</style>
+</head>
+<body>
+<header>
+<h1>✈ Shivendra Tours and Travels</h1>
+<p>आपकी यात्रा, हमारी जिम्मेदारी</p>
+<p>🚌 आरामदायक यात्रा • 🙏 यादगार अनुभव</p>
+</header>
 
-html {
-  scroll-behavior: smooth;
-}
+<nav>
+<a href="#home">होम</a>
+<a href="#packages">टूर पैकेज</a>
+<a href="#booking">बुकिंग</a>
+</nav>
 
-body {
-  font-family: Arial, sans-serif;
-  background: #f7f5ef;
-  color: #202b3c;
-  line-height: 1.6;
-}
+<div class="hero" id="home">
+<h2>चलिए, नई यात्रा पर! 🙏</h2>
+<p>परिवार और दोस्तों के साथ यादगार सफर की शुरुआत करें।</p>
+<p><b>आगामी यात्रा: 6 मार्च 2027</b></p>
+<p>अवधि: 7 दिन / 6 रात</p>
+<a class="btn" href="#booking">अभी पूछताछ करें</a>
+</div>
 
-header {
-  background: #071a35;
-  color: white;
-  padding: 17px 12px;
-  text-align: center;
-  border-bottom: 3px solid #d9ad50;
-}
+<section id="packages">
+<h2>हमारी यात्रा सेवाएँ</h2>
+<div class="card">
+<h3>🙏 धार्मिक यात्रा</h3>
+<p>प्रमुख तीर्थस्थलों की यात्रा की जानकारी और बुकिंग सहायता।</p>
+</div>
+<div class="card">
+<h3>🚌 भारत भ्रमण</h3>
+<p>परिवार, मित्रों और समूहों के लिए यात्रा की योजना बनाएँ।</p>
+</div>
+<div class="card">
+<h3>🏨 यात्रा सहायता</h3>
+<p>उपलब्धता के अनुसार बस, होटल और भोजन संबंधी जानकारी के लिए संपर्क करें।</p>
+</div>
+</section>
 
-.logo {
-  font-size: 29px;
-  margin-bottom: 5px;
-}
+<section id="booking">
+<h2>बुकिंग / पूछताछ फॉर्म</h2>
+<div class="card">
+<form id="bookingForm">
+<label>आपका नाम</label>
+<input id="name" required placeholder="अपना नाम लिखें">
+<label>मोबाइल नंबर</label>
+<input id="phone" type="tel" required placeholder="अपना मोबाइल नंबर">
+<label>यात्रियों की संख्या</label>
+<select id="people">
+<option>1 व्यक्ति</option>
+<option>2 व्यक्ति</option>
+<option>3 व्यक्ति</option>
+<option>4 व्यक्ति</option>
+<option>5 या अधिक व्यक्ति</option>
+</select>
+<label>यात्रा का प्रकार</label>
+<select id="tour">
+<option>धार्मिक यात्रा</option>
+<option>भारत भ्रमण</option>
+<option>अन्य यात्रा</option>
+</select>
+<label>संदेश</label>
+<textarea id="message" placeholder="अपना सवाल या यात्रा की जगह लिखें"></textarea>
+<button type="submit">WhatsApp पर पूछताछ भेजें</button>
+</form>
+<p class="small">फॉर्म भेजने पर WhatsApp खुलेगा। संदेश जाँचकर खुद भेजें। यह ऑनलाइन भुगतान या पक्की बुकिंग नहीं है।</p>
+</div>
+</section>
 
-header h1 {
-  font-size: 23px;
-  color: #f5d58a;
-}
+<footer>
+<h3>Shivendra Tours and Travels</h3>
+<p>📅 अगली प्रस्तावित यात्रा: 6 मार्च 2027</p>
+<p>📲 संपर्क: 93348 89540</p>
+<p class="small">यात्रा की जगह, किराया और उपलब्धता की पुष्टि संपर्क करके करें।</p>
+</footer>
 
-header p {
-  font-size: 13px;
-}
-
-nav {
-  background: #10294c;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 7px;
-  padding: 12px 5px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 13px;
-  padding: 5px 8px;
-}
-
-nav a:hover {
-  color: #f5d58a;
-}
-
-.hero {
-  min-height: 470px;
-  padding: 65px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  background:
-    linear-gradient(
-      rgba(4, 18, 39, 0.72),
-      rgba(4, 18, 39, 0.80)
-    ),
-    url("https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=85")
-    center/cover;
-}
-
-.hero-content {
-  max-width: 650px;
-}
-
-.badge {
-  display: inline-block;
-  border: 1px solid #f5d58a;
-  color: #f5d58a;
-  padding: 5px 13px;
-  border-radius: 30px;
-  font-size: 13px;
-  margin-bottom: 18px;
-}
-
-.hero h2 {
-  font-size: 35px;
-  line-height: 1.3;
-  margin-bottom: 18px;
-}
-
-.hero p {
-  font-size: 16px;
-  margin-bottom: 25px;
-}
-
-.btn {
-  display: inline-block;
-  background: #e5b653;
-  color: #071a35;
-  text-decoration: none;
-  padding: 12px 21px;
-  border: none;
-  border-radius: 7px;
-  font-size: 15px;
-  font-weight: bold;
-  cursor: pointer;
-  margin: 5px;
-}
-
-.btn:hover {
-  background: #f6d78e;
-}
-
-.btn-outline {
-  background: transparent;
-  border: 1px solid #f5d58a;
-  color: white;
-}
-
-section {
-  padding: 45px 16px;
-}
-
-.section-title {
-  text-align: center;
-  color: #10294c;
-  font-size: 27px;
-  margin-bottom: 10px;
-}
-
-.section-subtitle {
-  text-align: center;
-  color: #626b79;
-  margin-bottom: 28px;
-  font-size: 14px;
-}
-
-.gold-line {
-  height: 3px;
-  width: 65px;
-  background: #d9ad50;
-  margin: 12px auto 18px;
-}
-
-.cards {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  max-width: 1050px;
-  margin: auto;
-}
-
-.card {
-  background: white;
-  border-radius: 13px;
-  overflow: hidden;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-  border: 1px solid #eee7d8;
-}
-
-.card img {
-  width: 100%;
-  height: 210px;
-  object-fit: cover;
-  display: block;
-}
-
-.card-content {
-  padding: 20px;
-}
-
-.card h3 {
-  color: #10294c;
-  font-size: 19px;
-  margin-bottom: 10px;
-}
-
-.card p {
-  font-size: 14px;
-  margin: 6px 0;
-}
-
-.info {
-  background: #10294c;
-  color: white;
-  text-align: center;
-}
-
-.info .section-title {
-  color: #f5d58a;
-}
-
-.info .section-subtitle {
-  color: #e0e6ef;
-}
-
-.info-grid {
-  max-width: 900px;
-  margin: 25px auto 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-}
-
-.info-box {
-  border: 1px solid #b8954d;
-  border-radius: 10px;
-  padding: 19px 8px;
-  background: rgba(255,255,255,0.04);
-}
-
-.info-box .icon {
-  font-size: 30px;
-}
-
-.info-box h3 {
-  color: #f5d58a;
-  font-size: 15px;
-}
-
-.info-box p {
-  font-size: 12px;
-  margin-top: 5px;
-}
-
-.booking-wrap {
-  max-width: 550px;
-  margin: auto;
-  background: white;
-  border-radius: 14px;
-  padding: 23px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-}
-
-.booking-wrap label {
-  display: block;
-  font-weight: bold;
-  font-size: 14px;
-  margin-top: 12px;
-}
-
-.booking-wrap input,
-.booking-wrap select,
-.booking-wrap textarea {
-  width: 100%;
-  padding: 13px;
-  border: 1px solid #ccd3dc;
-  border-radius: 7px;
-  margin-top: 6px;
-  font-size: 15px;
-  background: white;
-}
-
-.booking-wrap .btn {
-  width: 100%;
-  margin: 20px 0 0;
-}
-
-.contact {
-  background: #eee8d8;
-  text-align: center;
-}
-
-.contact-box {
-  max-width: 600px;
-  margin: auto;
-  padding: 25px;
-  background: white;
-  border-radius: 13px;
-}
-
-.contact-box h3 {
-  color: #10294c;
-  margin-bottom: 10px;
+<script>
+document.getElementById("bookingForm").addEventListener("submit",function(e){
+e.preventDefault();
+const name=document.getElementById("name").value;
+const phone=document.getElementById("phone").value;
+const people=document.getElementById("people").value;
+const tour=document.getElementById("tour").value;
+const message=document.getElementById("message").value;
+const text="Namaste Shivendra Tours and Travels!%0A"+
+"Naam: "+encodeURIComponent(name)+"%0A"+
+"Mobile: "+encodeURIComponent(phone)+"%0A"+
+"Yatri: "+encodeURIComponent(people)+"%0A"+
+"Yatra: "+encodeURIComponent(tour)+"%0A"+
+"Sandesh: "+encodeURIComponent(message);
+window.open("https://wa.me/919334889540?text="+text,"_blank");
+});
+</script>
+</body>
+</html>
